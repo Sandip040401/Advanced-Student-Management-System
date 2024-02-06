@@ -139,7 +139,7 @@
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form>
+    <form  action="sidebar" method="get">
         <h3>LOGIN <br><i class="fa-solid fa-school"></i></h3>
 
         <label for="username">Username</label>
@@ -148,12 +148,18 @@
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password">
 
-        <button>Log In</button>
+        <button id="btn">Log In</button>
         <hr>
         <div class="fp">
             <a href="#">Forgrt Password ?</a>
         </div>
     </form>
 </body>
+<script>
+    document.getElementById('btn').addEventListener('click', function() {
+    // Replace 'page_url' with the desired page URL
+    window.location.replace('sidebar');
+});
+</script>
 
 </html>
