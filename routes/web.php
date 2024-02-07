@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\admin;
+use App\Http\Controller\adminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +20,9 @@ Route::get('/', [LoginController::class, 'showLoginForm']);
 
 Route::get('/', [LoginController::class, 'showLoginForm'])->middleware('guest');
 
-// Route::get('/', function () {
-//     return view('login');
-// });
+Route::get('/', function () {
+    return view('login');
+});
 
 Route::get('/sidebar', function () {
     return view('sidebar');
@@ -43,8 +45,62 @@ Route::get('/welcomeTeacher', function () {
 });
 
 
-Route::get('/studentRegistration', function () {
-    return view('studentRegistration');
+Route::get('/studentRegistration',[adminController::class,'adminIndex']);
+
+
+
+Route::get('/adminregistration', function () {
+    return view('adminregistration');
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::post('/adminregistration', function () {
+
+    admin::create([
+        'name'=> request('name'),
+        'dob'=> request('dob'),
+        'gender'=> request('gender'),
+        'email'=> request('email'),
+        'number'=> request('number')
+    ]);
+
+});
+
+
+
+Route::get('/db', function () {
+    return view('db');
+});
