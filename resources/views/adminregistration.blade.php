@@ -18,7 +18,7 @@
           <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
             <div class="card-body p-4 p-md-5">
               <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
-              <form action="{{ url('/register') }}" method="post">
+        <form action="/adminregistration" method="post">
 @csrf
                 <div class="row">
                   <div class="col-md-6 mb-4">
@@ -46,19 +46,19 @@
   
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" type="radio" name="gender" id="female"
-                        value="option1" checked />
+                        value="Female" checked />
                       <label class="form-check-label" for="femaleGender">Female</label>
                     </div>
   
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" type="radio" name="gender" id="male"
-                        value="option2" required/>
+                        value="Male" required/>
                       <label class="form-check-label" for="maleGender">Male</label>
                     </div>
   
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" type="radio" name="gender" id="other"
-                        value="option3" required />
+                        value="Other" required />
                       <label class="form-check-label" for="otherGender">Other</label>
                     </div>
   
@@ -77,17 +77,18 @@
                   <div class="col-md-6 mb-4 pb-2">
   
                     <div class="form-outline">
-                      <input type="tel" id="phoneNumber" class="form-control form-control-lg" name="phone" required/>
+                      <input type="tel" id="phoneNumber" class="form-control form-control-lg" name="number" required/>
                       <label class="form-label" for="phoneNumber">Phone Number</label>
                     </div>
   
                   </div>
                 </div>
                 <div class="mt-4 pt-2">
-                  <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                  <button class="btn btn-primary btn-lg" >SUBMIT</button>
+                  <!-- <input class="btn btn-primary btn-lg" type="submit" value="Submit" /> -->
                 </div>
   
-              </form>
+        </form>
             </div>
           </div>
         </div>
