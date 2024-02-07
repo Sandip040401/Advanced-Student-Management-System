@@ -78,21 +78,36 @@ border: none;
         <div class="card">
             <h2 style="font-family: 'Kaushan Script', cursive;" >Admin Login</h2>
             <p>Admin Panel</p>
-            <button class="btn">Login</button>
+            <button class="btn" id="btn1">Login</button>
         </div>
         <div class="card">
         <h2 style="font-family: 'Kaushan Script', cursive;">Teacher Login</h2>
         <p>Teacher Panel</p>
-            <button class="btn">Login</button>
+            <button class="btn" id="btn2">Login</button>
         </div>
         <div class="card">
         <h2 style="font-family: 'Kaushan Script', cursive;">Student Login</h2>
             <p>Student Panel</p>
-            <button class="btn">Login</button>
+            <button class="btn" id="btn3">Login</button>
         </div>
     </div>
 
 
 </body>
+<script>
+    document.getElementById('btn1').addEventListener('click', function() {
+    // Replace 'page_url' with the desired page URL
+    window.location.replace('welcomeAdmin');
+});
 
+document.getElementById('btn2').addEventListener('click', function() {
+    // Replace 'page_url' with the desired page URL
+    window.location.replace('welcomeTeacher');
+});
+
+document.getElementById('btn2').addEventListener('click', function() {
+    // Replace 'page_url' with the desired page URL
+    window.location.replace('welcomeStudent');
+});
+</script>
 </html>
