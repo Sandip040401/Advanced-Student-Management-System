@@ -54,8 +54,26 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Users</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Classes</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Class
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/Student Registration"></a></li>
+            
+            <li><a class="dropdown-item" href="/classOne">Class 1</a></li>
+            <li><a class="dropdown-item" href="/Student Registration"></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/classTwo">Class 2</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/classThree">Class 3</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/classFour">Class 4</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/classFive">Class 5</a></li>
+            
+           
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Sections</a>
@@ -68,8 +86,9 @@
             Exams
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="/exam">Exam Registration</a></li>
+            <li><a class="dropdown-item" href="/admitdownload">Admit Download</a></li>
+            <li><a class="dropdown-item" href="/results">Results</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>

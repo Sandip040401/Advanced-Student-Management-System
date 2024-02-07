@@ -48,6 +48,3 @@ Route::get('/studentRegistration', function () {
 });
 
 
-Route::get('/adminregistration', function () {
-    return view('adminregistration');
-});
