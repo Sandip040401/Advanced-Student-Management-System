@@ -25,9 +25,3 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('/settings', function () {
-    return view('settings');
-});
-Route::get('/studentRegistration', function () {
-    return view('studentRegistration');
-});
