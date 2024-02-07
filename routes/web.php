@@ -32,3 +32,23 @@ Route::get('/login', function () {
 Route::get('/studentRegistration', function () {
     return view('studentRegistration');
 });
+
+Route::get('/classOne', function () {
+    return view('classOne');
+});
+
+Route::get('/classTwo', function () {
+    return view('classTwo');
+});
+
+Route::get('/classThree', function () {
+    return view('classThree');
+});
+
+Route::get('/classFour', function () {
+    return view('classFour');
+});
+
+Route::get('/classFive', function () {
+    return view('classFive');
+});
