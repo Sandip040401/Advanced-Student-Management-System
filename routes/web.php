@@ -32,3 +32,13 @@ Route::get('/login', function () {
 Route::get('/studentRegistration', function () {
     return view('studentRegistration');
 });
+
+Route::get('/exam', function () {
+    return view('exam');
+});
+Route::get('/admitdownload', function () {
+    return view('admitdownload');
+});
+Route::get('/results', function () {
+    return view('results');
+});
