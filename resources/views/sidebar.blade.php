@@ -68,7 +68,7 @@
             Exams
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/exam">Exam Registration</a></li>
+            <li><a class="dropdown-item" href="/examRegistration">Exam Registration</a></li>
             <li><a class="dropdown-item" href="/admitdownload">Admit Download</a></li>
             <li><a class="dropdown-item" href="/results">Results</a></li>
             <li><hr class="dropdown-divider"></li>
