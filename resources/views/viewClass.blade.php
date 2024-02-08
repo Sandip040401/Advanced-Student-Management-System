@@ -40,9 +40,11 @@
     <div class="container col-4">
         <select class="form-select" id="classSelect" aria-label="Default select example">
             <option selected>Class</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">I</option>
+            <option value="2">II</option>
+            <option value="3">III</option>
+            <option value="4">IV</option>
+            <option value="5">V</option>
         </select>
         <select class="form-select" id="sectionSelect" aria-label="Default select example">
             <option selected>Section</option>

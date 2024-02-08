@@ -7,9 +7,6 @@
       <title>Registration</title>
       <style>
           /* Your existing styles */
-          body {
-            font-family: Arial, sans-serif;
-        }
 
         .container {
             margin: 20px auto;
@@ -64,7 +61,7 @@
   
       <div class="container">
           <form action="/submit_registration" method="post">
-              <h2 class="text-center mb-4">Student Registration</h2>
+              <h2 class="mb-4">Student Registration</h2>
   
               <div class="row">
                   <div class="col-md-4">
@@ -72,12 +69,13 @@
                           <h4>Student Details</h4>
                           <!-- Your existing student details fields -->
                           <label for="studentName">Student Name</label>
-                         <input type="text" name="studentName" id="studentName" class="form-control" required>
-                         <label for="fatherName">Father Name</label>
-                    <input type="text" name="fatherName" id="fatherName" class="form-control" required>
-
-                    <label for="motherName">Mother Name</label>
-                    <input type="text" name="motherName" id="motherName" class="form-control" required>
+                          <input type="text" name="studentName" id="studentName" class="form-control" required>
+                          <label for="fatherName">Father Name</label>
+                          <input type="text" name="fatherName" id="fatherName" class="form-control" required>
+                          <label for="motherName">Mother Name</label>
+                          <input type="text" name="motherName" id="motherName" class="form-control" required>
+                          <label for="studentdob">da</label>
+                          <input type="text" name="motherName" id="motherName" class="form-control" required>
                       </div>
                   </div>
   

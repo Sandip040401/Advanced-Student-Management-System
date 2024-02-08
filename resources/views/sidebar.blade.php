@@ -45,14 +45,22 @@
             Students
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/studentRegistration">Student Registration</a></li>
-            <li><a class="dropdown-item" href="#">Class Assignments</a></li>
-            <li><a class="dropdown-item" href="#">Attendance</a></li>
-            <li><a class="dropdown-item" href="#">Grades</a></li>
+            <li><a class="dropdown-item" href="#">Student List</a></li>
+            <li><a class="dropdown-item" href="/studentRegistration">Student Add</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Student Records</a></li>
-            <li><a class="dropdown-item" href="#">Parent Communication</a></li>
-            <li><a class="dropdown-item" href="#">Behavioral Reports</a></li>
+            <li><a class="dropdown-item" href="#">Student Edit</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Subject
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Subject List</a></li>
+            <li><a class="dropdown-item" href="#">Subject Add</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Subject Edit</a></li>
           </ul>
         </li>
 
@@ -63,7 +71,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/viewClass">View Class</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Add Class</a></li>
+            <li><a class="dropdown-item" href="/err">Add Class</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -76,6 +84,9 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Add Exam</a></li>
           </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Holidays</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Settings</a>
