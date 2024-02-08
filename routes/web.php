@@ -60,3 +60,57 @@ Route::get('/results', function () {
     return view('results');
 });
 
+Route::get('/adminregistration', function () {
+    return view('adminregistration');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::post('/adminregistration', function () {
+
+    admin::create([
+        'name'=> request('name'),
+        'dob'=> request('dob'),
+        'gender'=> request('gender'),
+        'email'=> request('email'),
+        'number'=> request('number')
+    ]);
+
+});
+
+
+
+Route::get('/db', function () {
+    return view('db');
+});
