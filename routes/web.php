@@ -62,6 +62,9 @@ Route::get('/admitdownload', function () {
     return view('admitdownload');
 });
 
+Route::get('/viewClass', function () {
+    return view('viewClass');
+});
 
 
 
