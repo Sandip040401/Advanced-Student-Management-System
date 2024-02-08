@@ -25,7 +25,7 @@ Route::get('/', function () {
 });
 
 Route::get('/sidebar', function () {
-    return view('sidebar');
+    return view('dashboard');
 });
 
 Route::get('/dashboard', function () {
