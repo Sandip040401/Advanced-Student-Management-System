@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\admin;
+use App\Http\Controller\adminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,9 +14,14 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+use App\Http\Controllers\LoginController;
+
+Route::get('/', [LoginController::class, 'showLoginForm']);
+
+Route::get('/', [LoginController::class, 'showLoginForm'])->middleware('guest');
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
 Route::get('/sidebar', function () {
@@ -25,9 +32,18 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/welcomeAdmin', function () {
+    return view('welcomeAdmin');
 });
+
+Route::get('/welcomeStudent', function () {
+    return view('welcomeStudent');
+});
+
+Route::get('/welcomeTeacher', function () {
+    return view('welcomeTeacher');
+});
+
 
 Route::get('/studentRegistration', function () {
     return view('studentRegistration');
@@ -43,3 +59,4 @@ Route::get('/admitdownload', function () {
 Route::get('/results', function () {
     return view('results');
 });
+

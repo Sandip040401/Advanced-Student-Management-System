@@ -140,7 +140,7 @@
         <div class="shape"></div>
     </div>
     <form  action="sidebar" method="get">
-        <h3>LOGIN <br><i class="fa-solid fa-school"></i></h3>
+        <h3>STUDENT LOGIN <br><i class="fa-solid fa-school"></i></h3>
 
         <label for="username">Username</label>
         <input type="text" placeholder="Email or Phone" id="username">
@@ -155,11 +155,5 @@
         </div>
     </form>
 </body>
-<script>
-    document.getElementById('btn').addEventListener('click', function() {
-    // Replace 'page_url' with the desired page URL
-    window.location.replace('sidebar');
-});
-</script>
 
 </html>
