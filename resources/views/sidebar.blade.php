@@ -26,7 +26,7 @@
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="adminregistration">Admin Registration</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -79,10 +79,11 @@
             Exams
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Exam Registration</a></li>
+            <li><a class="dropdown-item" href="/examRegistration">Exam Registration</a></li>
             <li><a class="dropdown-item" href="/admitdownload">Admit Download</a></li>
+            <li><a class="dropdown-item" href="/results">Results</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Add Exam</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
         <li class="nav-item">
