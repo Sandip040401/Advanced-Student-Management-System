@@ -49,73 +49,14 @@ Route::get('/studentRegistration', function () {
     return view('studentRegistration');
 });
 
-
-
-
-Route::get('/adminregistration', function () {
-    return view('adminregistration');
+Route::get('/examRegistration', function () {
+    return view('examRegistration');
 });
 
-
-
-Route::get('/admitdownload', function () {
-    return view('admitdownload');
-});
-
-Route::get('/viewClass', function () {
-    return view('viewClass');
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Route::post('/adminregistration', function () {
-
-    admin::create([
-        'name'=> request('name'),
-        'dob'=> request('dob'),
-        'gender'=> request('gender'),
-        'email'=> request('email'),
-        'number'=> request('number')
-    ]);
-
-});
-
-Route::get('/exam', function () {
-    return view('exam');
-});
 Route::get('/admitdownload', function () {
     return view('admitdownload');
 });
 Route::get('/results', function () {
     return view('results');
 });
+
