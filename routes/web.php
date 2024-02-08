@@ -65,6 +65,9 @@ Route::get('/adminregistration', function () {
 });
 
 
+Route::get('/viewClass', function () {
+    return view('viewClass');
+});
 
 
 
