@@ -58,6 +58,11 @@ Route::get('/adminregistration', function () {
 
 
 
+Route::get('/admitdownload', function () {
+    return view('admitdownload');
+});
+
+
 
 
 
