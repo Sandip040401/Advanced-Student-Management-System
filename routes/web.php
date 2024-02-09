@@ -44,6 +44,10 @@ Route::get('/welcomeTeacher', function () {
     return view('welcomeTeacher');
 });
 
+Route::get('/admitdownload', function () {
+    return view('admitdownload');
+});
+
 
 Route::get('/studentRegistration',[adminController::class,'adminIndex']);
 
