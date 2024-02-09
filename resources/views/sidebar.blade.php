@@ -23,10 +23,10 @@
             Academics
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">View Admin</a></li>
+            <li><a class="dropdown-item" href="#">Edit Admin</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="adminregistration">Admin Registration</a></li>
+            <li><a class="dropdown-item" href="/adminregistration">Admin Registration</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -45,48 +45,40 @@
             Students
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/studentRegistration">Student Registration</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Student List</a></li>
+            <li><a class="dropdown-item" href="/studentRegistration">Student Add</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Student Edit</a></li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Users</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Class
+            Subject
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/Student Registration"></a></li>
-            
-            <li><a class="dropdown-item" href="/classOne">Class 1</a></li>
-            <li><a class="dropdown-item" href="/Student Registration"></a></li>
+            <li><a class="dropdown-item" href="#">Subject List</a></li>
+            <li><a class="dropdown-item" href="#">Subject Add</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/classTwo">Class 2</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/classThree">Class 3</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/classFour">Class 4</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/classFive">Class 5</a></li>
-            
-           
+            <li><a class="dropdown-item" href="#">Subject Edit</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Sections</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Subjects</a>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Classes
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/viewClass">View Class</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/err">Add Class</a></li>
+          </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Exams
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/exam">Exam Registration</a></li>
+            <li><a class="dropdown-item" href="/examRegistration">Exam Registration</a></li>
             <li><a class="dropdown-item" href="/admitdownload">Admit Download</a></li>
             <li><a class="dropdown-item" href="/results">Results</a></li>
             <li><hr class="dropdown-divider"></li>
@@ -94,7 +86,10 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/settings">Settings</a>
+          <a class="nav-link active" aria-current="page" href="#">Holidays</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Settings</a>
         </li>
       </ul>
     </div>

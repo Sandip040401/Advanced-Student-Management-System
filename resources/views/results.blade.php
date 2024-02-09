@@ -10,6 +10,6 @@
 @include('sidebar')
 
     <!-- Your home page content goes here -->
-<h1>hello</h1>
+<h1>abc</h1>
 </body>
 </html>

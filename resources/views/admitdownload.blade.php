@@ -118,6 +118,9 @@
     #status{
         font-size: small;
     }
+    #downloadOption {
+            display: none;
+        }
     </style>
 </head>
 
@@ -148,7 +151,7 @@
                 <div>
                     <input type="text" id="entered-captcha" placeholder="Enter the captcha..">
                 </div>
-                <div>
+                <div id="downloadOption" >
                 <button type="submit" class="btn1">Download Admit Card</button>
                 </div>
                 <button type="button" onclick="check()">check</button>
@@ -192,11 +195,14 @@ check = () => {
     console.log(userValue);
     if (userValue == captcha) {
         status.innerText = "Correct!!"
+        document.getElementById('downloadOption').style.display = 'block';
+
     } else {
         status.innerText = " Invalid Captcha Try Again!!"
         document.getElementById("entered-captcha").value = '';
     }
 }
+
 </script>
 
 </html>

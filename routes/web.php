@@ -25,7 +25,7 @@ Route::get('/', function () {
 });
 
 Route::get('/sidebar', function () {
-    return view('sidebar');
+    return view('dashboard');
 });
 
 Route::get('/dashboard', function () {
@@ -49,16 +49,29 @@ Route::get('/admitdownload', function () {
 });
 
 
-Route::get('/studentRegistration',[adminController::class,'adminIndex']);
+Route::get('/studentRegistration', function () {
+    return view('studentRegistration');
+});
 
+Route::get('/examRegistration', function () {
+    return view('examRegistration');
+});
 
+Route::get('/admitdownload', function () {
+    return view('admitdownload');
+});
+Route::get('/results', function () {
+    return view('results');
+});
 
 Route::get('/adminregistration', function () {
     return view('adminregistration');
 });
 
 
-
+Route::get('/viewClass', function () {
+    return view('viewClass');
+});
 
 
 
