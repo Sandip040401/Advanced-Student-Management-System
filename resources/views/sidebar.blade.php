@@ -23,7 +23,7 @@
             Academics
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">View Admin</a></li>
+            <li><a class="dropdown-item" href="/viewAdmin">View Admin</a></li>
             <li><a class="dropdown-item" href="#">Edit Admin</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="/adminregistration">Admin Registration</a></li>
