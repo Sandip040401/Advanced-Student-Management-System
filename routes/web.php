@@ -79,7 +79,18 @@ Route::get('/viewAdmin', function () {
     return view('viewAdmin');
 });
 
+Route::get('/payFees', function () {
+    return view('payFees');
+});
 
+
+Route::get('/subjectList', function () {
+    return view('subjectList');
+});
+
+Route::get('/settings', function () {
+    return view('settings');
+});
 
 
 
