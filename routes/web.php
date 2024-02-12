@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\admin;
-use App\Http\Controller\adminController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,6 +44,10 @@ Route::get('/welcomeTeacher', function () {
     return view('welcomeTeacher');
 });
 
+Route::get('/admitdownload', function () {
+    return view('admitdownload');
+});
+
 
 Route::get('/studentRegistration', function () {
     return view('studentRegistration');
@@ -60,8 +64,19 @@ Route::get('/results', function () {
     return view('results');
 });
 
-Route::get('/adminregistration', function () {
-    return view('adminregistration');
+
+
+
+Route::get('/viewClass', function () {
+    return view('viewClass');
+});
+
+Route::get('/teachers', function () {
+    return view('teachers');
+});
+
+Route::get('/viewAdmin', function () {
+    return view('viewAdmin');
 });
 
 
@@ -88,26 +103,22 @@ Route::get('/adminregistration', function () {
 
 
 
+Route::get('/adminregistration', [AdminController::class, 'adminregistration']);
+Route::post('/adminregistration', [AdminController::class, 'adminStore']);
 
 
 
+// Route::post('/adminregistration', function () {
 
+//     admin::create([
+//         'name'=> request('name'),
+//         'dob'=> request('dob'),
+//         'gender'=> request('gender'),
+//         'email'=> request('email'),
+//         'number'=> request('number')
+//     ]);
 
-
-
-
-
-Route::post('/adminregistration', function () {
-
-    admin::create([
-        'name'=> request('name'),
-        'dob'=> request('dob'),
-        'gender'=> request('gender'),
-        'email'=> request('email'),
-        'number'=> request('number')
-    ]);
-
-});
+// });
 
 
 

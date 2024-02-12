@@ -23,7 +23,7 @@
             Academics
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">View Admin</a></li>
+            <li><a class="dropdown-item" href="/viewAdmin">View Admin</a></li>
             <li><a class="dropdown-item" href="#">Edit Admin</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="/adminregistration">Admin Registration</a></li>
@@ -34,7 +34,7 @@
             Administrative
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="/teachers">Teachers</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -45,13 +45,12 @@
             Students
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Student List</a></li>
+            <li><a class="dropdown-item" href="/viewClass">Student List</a></li>
             <li><a class="dropdown-item" href="/studentRegistration">Student Add</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Student Edit</a></li>
           </ul>
         </li>
-
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Subject

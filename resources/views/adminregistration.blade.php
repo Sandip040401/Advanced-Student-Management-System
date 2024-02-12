@@ -10,14 +10,15 @@
 @include('sidebar')
 
 <!-- Your home page content goes here -->
- 
+ <div style="margin-top: 25px; text-align: center;">
+ <h3>Registration Form</h3>
+ </div>
 <section class="vh-100 gradient-custom">
-    <div class="container py-5 h-100">
+    <div class="container ">
       <div class="row justify-content-center align-items-center h-100">
         <div class="col-12 col-lg-9 col-xl-7">
           <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
             <div class="card-body p-4 p-md-5">
-              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
         <form action="/adminregistration" method="post">
 @csrf
                 <div class="row">
@@ -83,7 +84,7 @@
   
                   </div>
                 </div>
-                <div class="mt-4 pt-2">
+                <div class="pt-2">
                   <button class="btn btn-primary btn-lg" >SUBMIT</button>
                   <!-- <input class="btn btn-primary btn-lg" type="submit" value="Submit" /> -->
                 </div>
