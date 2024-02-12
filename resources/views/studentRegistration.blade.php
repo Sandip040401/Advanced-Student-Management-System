@@ -31,6 +31,11 @@
             margin: 20px 0 10px 10px;
             max-width: 20%;
         }
+
+        #view{
+            display:flex;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -64,8 +69,6 @@
                     <option value="other">Other</option>
                 </select>
             </div> 
-            <!-- Continue with the rest of the form fields with appropriate names -->
-            <!-- Continue with the rest of the form fields with appropriate names -->
             <div class="form-group col-lg-4">
                 <label for="studentDOB">Date of Birth</label>
                 <input type="date" class="form-control" id="studentDOB"  placeholder="Enter Date of Birth" required>
@@ -135,11 +138,14 @@
             <button type="button" class="btn btn-primary" id="submit">Submit</button>
         </div>
         
-       
-        <!-- View Student Form (initially hidden) -->
+        <div id="viewPage" style="display: none;">
+            @include('view')
+        </div>
+        
         <div class="form row" id="viewStudentForm" style="display: none;">
-            <!-- Add content for View Student form here -->
-            <h1>Coming Soon</h1>
+            <h1>
+                Coming Soon
+            </h1>
         </div>
     </div>
 
@@ -150,11 +156,13 @@
             $('#addStudentBtn').click(function () {
                 $('#addStudentForm').show();
                 $('#viewStudentForm').hide();
+                $('#viewPage').hide();
             });
 
             $('#viewStudentBtn').click(function () {
                 $('#addStudentForm').hide();
                 $('#viewStudentForm').show();
+                $('#viewPage').show();
             });
         });
         document.getElementById('fileInput').addEventListener('change', function () {

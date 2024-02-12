@@ -69,6 +69,9 @@ Route::get('/viewClass', function () {
     return view('viewClass');
 });
 
+Route::get('/teachers', function () {
+    return view('teachers');
+});
 
 
 
