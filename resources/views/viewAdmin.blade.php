@@ -18,9 +18,9 @@
         @include('sidebar')
     </header>
     <main>
-        <div class="container">
-            <h1 class="align-center">Admin list</h1>
-        </div>
+        <div style="margin-top: 25px; text-align: center;">
+            <h3>Admin List</h3>
+            </div>
         <div class="table-responsive">
             <table class="table table-dark table-hover table-responsive">
                 <thead class="table-dark">
@@ -51,9 +51,13 @@
                                 </button>
                             </a>
                         </td>
-                        <td><button type="button" class="btn btn-primary">
+                        <td>
+                        <a href="{{route('admin.edit',['id'=>$item->id])}}">
+
+                            <button type="button" class="btn btn-primary">
                                 Edit
                             </button>
+                        </a>
                         </td>
 
                     </tr>

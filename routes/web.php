@@ -119,6 +119,11 @@ Route::post('/adminregistration', [AdminController::class, 'adminStore']);
 
 Route::get('/viewAdmin/delete/{id}', [AdminController::class, 'delete'])->name('admin.delete');
 
+Route::get('/viewAdmin/edit/{id}', [AdminController::class, 'edit'])->name('admin.edit');
+
+Route::post('/viewAdmin/update/{id}', [AdminController::class, 'update'])->name('admin.update');
+
+
 Route::get('/viewAdmin', [AdminController::class, 'view']);
 
 
