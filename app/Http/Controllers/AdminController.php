@@ -43,4 +43,26 @@ class AdminController extends Controller
         }
         return redirect('viewAdmin');
     }
+
+    public function edit($id){
+        $admin = admin::find($id);
+        if(is_null($admin)){
+        return redirect('viewAdmin');
+        }
+        else{
+            $data = compact('admin');
+            return view ('editAdmin')->with($data);
+        }
+    }
+    public function update($id, Request $request)
+    {
+        $admin = admin::find($id);
+        $admin->name =  $request['name'];
+        $admin->dob =  $request['dob'];
+        $admin->gender =  $request['gender'];
+        $admin->email =  $request['email'];
+        $admin->number =  $request['number'];
+        $admin->save();
+        return redirect('viewAdmin');
+    }
 }
