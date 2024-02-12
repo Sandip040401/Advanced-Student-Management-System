@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\admin;
+use App\Models\Admin;
 use App\Http\Controllers\AdminController;
 
 /*
@@ -116,6 +116,10 @@ Route::get('/settings', function () {
 
 Route::get('/adminregistration', [AdminController::class, 'adminregistration']);
 Route::post('/adminregistration', [AdminController::class, 'adminStore']);
+
+Route::get('/viewAdmin/delete/{id}', [AdminController::class, 'delete'])->name('admin.delete');
+
+Route::get('/viewAdmin', [AdminController::class, 'view']);
 
 
 

@@ -77,7 +77,7 @@
                 <span class="count">200</span>
             </div>
         </div>
-        <br>
+        <hr>
         <hr>
 
         @include('calender')
