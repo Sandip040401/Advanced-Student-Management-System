@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Home</title>
+    <style>
+      #payFees{
+        font-weight: bold;
+      }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -56,7 +61,7 @@
             Subject
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Subject List</a></li>
+            <li><a class="dropdown-item" href="/subjectList">Subject List</a></li>
             <li><a class="dropdown-item" href="#">Subject Add</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Subject Edit</a></li>
@@ -89,7 +94,10 @@
           <a class="nav-link active" aria-current="page" href="#">Holidays</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Settings</a>
+          <a class="nav-link active" aria-current="page" href="/settings">Settings</a>
+        </li>
+        <li class="nav-item" id="payFees">
+          <a class="nav-link active" aria-current="page" href="/payFees">Pay Fees</a>
         </li>
       </ul>
     </div>

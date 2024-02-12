@@ -21,7 +21,7 @@ Route::get('/', [LoginController::class, 'showLoginForm']);
 Route::get('/', [LoginController::class, 'showLoginForm'])->middleware('guest');
 
 Route::get('/', function () {
-    return view('login');
+    return view('welcomeLogin');
 });
 
 Route::get('/sidebar', function () {
@@ -79,7 +79,18 @@ Route::get('/viewAdmin', function () {
     return view('viewAdmin');
 });
 
+Route::get('/payFees', function () {
+    return view('payFees');
+});
 
+
+Route::get('/subjectList', function () {
+    return view('subjectList');
+});
+
+Route::get('/settings', function () {
+    return view('settings');
+});
 
 
 
