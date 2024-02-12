@@ -21,7 +21,7 @@ Route::get('/', [LoginController::class, 'showLoginForm']);
 Route::get('/', [LoginController::class, 'showLoginForm'])->middleware('guest');
 
 Route::get('/', function () {
-    return view('login');
+    return view('welcomeLogin');
 });
 
 Route::get('/sidebar', function () {
